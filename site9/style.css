@@ -1,0 +1,115 @@
+body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #FFFDE7;
+      color: #333333;
+      line-height: 1.5;
+    }
+
+   
+.header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #FFE082;
+      color: #333333;
+      text-align: center;
+      padding: 18px 16px;
+      border-bottom: 2px solid #FFD54F; 
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+   
+.menu {
+      position: absolute;
+      right: 0;
+      top: 60px;
+      width: 220px;
+      background: #FFFFFF;
+      border-left: 2px solid #FFD54F; 
+      padding: 15px;
+      min-height: calc(100vh - 100px);
+    }
+
+.menu h3 {
+      margin-top: 0;
+      color: #333333;
+    }
+.menu ul {
+      list-style: none;
+      padding-left: 0;
+    }
+.menu li {
+      margin: 8px 0;
+      padding: 8px;
+      background: #FFF9C4;
+      border-radius: 6px;
+    }
+
+  
+.conteudo {
+      margin-top: 40px;
+      margin-right: 240px;
+      padding: 20px;
+    }
+
+ 
+.obra {
+      position: relative;
+      background: #FFFFFF;
+      border: 2px solid #FFE082;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+.obra h2 {
+    margin: 0 0 8px;
+    color: #333333;
+    }
+.obra .detalhes {
+    color: #757575;
+    margin-bottom: 12px;
+    }
+.preco {
+    font-weight: bold;
+    margin-bottom: 12px;
+    }
+
+  
+.imagem {
+    width: 100%;
+    height: 200px;
+    background: #FFF9C4;
+    border: 1px dashed #FFD54F; 
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.comprar, .proximo {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  background: #FFD54F; 
+  color: #333333;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer {
+    background: #FFE082;
+    color: #333333;
+    text-align: center;
+    padding: 14px;
+    margin-top: 40px;
+    border-top: 2px solid #FFD54F; 
+    }

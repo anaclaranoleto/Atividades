@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conceitos da Tag HEAD</title>
+    <base href="https://www.exemplo.com/">
+    <meta name="description" content="Página educativa sobre a tag HEAD e seus principais conceitos.">
+    <meta name="author" content="Ana">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffd6d6;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #ff69b4, #32cd32); 
+            color: rgb(233, 255, 219);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        header p {
+            margin: 8px 0 0 0;
+            font-size: 1.2em;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #42535f;
+            border: 3px solid #ff69b4; 
+            padding: 10px;
+            border-radius: 10px;
+            background: #fff0f6; 
+            margin-top: 30px;
+        }
+        p, ul, .diagram {
+            border: 2px solid #ff69b4; 
+            padding: 12px;
+            border-radius: 8px;
+            background: #fffafa;
+            margin: 15px 0;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: "🌸 ";
+            color: #ff69b4;
+        }
+        .diagram {
+            font-family: monospace;
+            background: #fff0f6;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+        }
+        .square {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #ff69b4, #32cd32);
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 3px solid #ff69b4;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flowchart div {
+            padding: 12px 25px;
+            margin: 10px;
+            border: 3px solid #ff69b4;
+            border-radius: 8px;
+            background: #f0fff0;
+            transition: transform 0.2s;
+        }
+        .flowchart div:hover {
+            transform: scale(1.05);
+            background: #ffe4e1;
+        }
+        .arrow {
+            font-size: 28px;
+            color: #32cd32;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Principais Conceitos da Tag HEAD</h1>
+    </header>
+    <main>
+        <h2>1 - Utilidade da tag HEAD</h2>
+        <p>A tag <code>&lt;head&gt;</code> contém informações <em>meta</em> sobre o documento HTML, 
+        que não são exibidas diretamente na página. Dentro dela podem ser usados:</p>
+        <ul>
+            <li>&lt;title&gt;</li>
+            <li>&lt;meta&gt;</li>
+            <li>&lt;base&gt;</li>
+            <li>&lt;link&gt;</li>
+            <li>&lt;style&gt;</li>
+            <li>&lt;script&gt;</li>
+        </ul>
 
+        <h2>2 - Tags meta, title e base</h2>
+        <p><strong>&lt;meta&gt;</strong>: Define metadados, como charset ou descrição da página.<br>
+           Exemplo: <code>&lt;meta name="description" content="Exemplo de página"&gt;</code></p>
+        <p><strong>&lt;title&gt;</strong>: Define o título exibido na aba do navegador.<br>
+           Exemplo: <code>&lt;title&gt;Minha Página&lt;/title&gt;</code></p>
+        <p><strong>&lt;base&gt;</strong>: Define a URL base para links relativos.<br>
+           Exemplo: <code>&lt;base href="https://www.exemplo.com/"&gt;</code></p>
+
+        <h2>3 - O que é um charset?</h2>
+        <p>Charset é o conjunto de caracteres usado para interpretar e exibir o texto da página. 
+        Ele garante que acentos, símbolos e emojis sejam mostrados corretamente.</p>
+
+        <h2>4 - Charset padrão</h2>
+        <p>Se não for definido, o navegador geralmente assume <strong>ISO-8859-1</strong> ou outro padrão local. 
+        Hoje em dia recomenda-se sempre usar <strong>UTF-8</strong>.</p>
+
+        <h2>5 - Principais charsets</h2>
+        <ul>
+            <li><strong>UTF-8</strong>: Suporta praticamente todos os caracteres e emojis.</li>
+            <li><strong>ASCII</strong>: Conjunto básico de 128 caracteres (sem acentos).</li>
+            <li><strong>ANSI</strong>: Padrão antigo do Windows, limitado e dependente da localidade.</li>
+            <li><strong>ISO-8859-1</strong>: Suporta caracteres latinos ocidentais, usado em páginas antigas.</li>
+        </ul>
+
+        <h2>6 - Símbolos e Emojis</h2>
+        <p>Podem ser usados diretamente no HTML (se o charset for UTF-8) ou via códigos Unicode.<br>
+        Exemplos: ☀️ 🌍 ❤️ 🚀</p>
+
+        <h2>7 - Exemplos visuais elaborados</h2>
+
+        <h3>Algoritmo em pseudocódigo com emojis</h3>
+        <div class="diagram">
+            🔵 Início<br>
+            ➡️ Ler dados<br>
+            🔄 Enquanto condição:<br>
+            &nbsp;&nbsp;⚙️ Processar<br>
+            &nbsp;&nbsp;📤 Saída<br>
+            🔴 Fim
+        </div>
+
+        <h3>Quadrado colorido com CSS</h3>
+        <div class="square"></div>
+
+        <h3>Fluxograma simples em HTML/CSS</h3>
+        <div class="flowchart">
+            <div>🔵 Início</div>
+            <div class="arrow">⬇️</div>
+            <div>📥 Entrada de dados</div>
+            <div class="arrow">⬇️</div>
+            <div>⚙️ Processamento</div>
+            <div class="arrow">⬇️</div>
+            <div>📤 Saída</div>
+            <div class="arrow">⬇️</div>
+            <div>🔴 Fim</div>
+        </div>
+    </main>
+</body>
+</html>

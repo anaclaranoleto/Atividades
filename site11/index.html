@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Receita de Salada de Lentilha</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    background-color: #f4f7f6;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
 
+.recipe-card {
+    background: #ffffff;
+    max-width: 700px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2e4a3d;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2 {
+    color: #5a8266;
+    border-bottom: 2px solid #eef2f1;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.ingredients-list {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.ingredients-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #444;
+}
+
+.ingredients-list li::before {
+    content: "✓";
+    color: #8dbb99;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+video, iframe {
+    border-radius: 8px;
+    max-width: 100%;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.info-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    color: #8dbb99;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-link:hover {
+    color: #5a8266;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <main class="recipe-card">
+        <header>
+            <h1>Salada de lentilha com frango crocante</h1>
+        </header>
+
+        <section>
+            <h2>Ingredientes</h2>
+            <ul class="ingredients-list">
+                <li>Meia xícara de lentilha seca</li>
+                <li>3 folhas de louro</li>
+                <li>Sal a gosto</li>
+                <li>200 gramas de tomate picado sem casca e sem semente</li>
+                <li>100 gramas de salsão picado (ou meia xícara de chá)</li>
+                <li>Meia xícara de hortelã em folha picada grosseiramente</li>
+                <li>300 gramas de peito de frango picadinho</li>
+                <li>12 gramas de sal</li>
+                <li>2 colheres de chá de cominho em pó</li>
+                <li>1 colher de chá de páprica defumada</li>
+                <li>Pimenta-caiena a gosto</li>
+                <li>3 colheres de sopa de manteiga sem sal</li>
+            </ul>
+        </section>
+
+        <section class="media-section">
+            <h2>Para Abrir o Apetite</h2>
+            <div class="video-container">
+                <video width="100%" max-width="420" autoplay muted>
+                    <source src="pessoacomendo.mp4" type="video/mp4">
+                O seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+        </section>
+        <section class="media-section">
+             <h2>Ouça o som para descontrair (surpresa)</h2>
+            <div>
+                <audio controls>
+                    <source src="https://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+                Seu navegador não suporta a tag de áudio.
+                </audio>
+            </div>
+        </section>
+        <section class="media-section">
+            <h2>Dica do Chef (YouTube)</h2>
+            <div>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/GL4QZcAH5nE?si=_2U4g0RQd3wj-NWw&amp;start=38" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <a href="tagsnovas.html" class="info-link">Explicação das tags áudio e vídeo</a>
+        </footer>
+    </main>
+</body>
+</html>
